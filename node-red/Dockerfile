@@ -15,4 +15,4 @@ USER node-red
 
 EXPOSE 1880
 
-CMD ["npm", "start"]
+CMD ["sh", "-c", "node-red -s settings.js -p ${PORT:-1880}"]
